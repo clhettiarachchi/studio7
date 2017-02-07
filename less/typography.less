@@ -1,0 +1,281 @@
+body {
+	font-family: @custom-font-1;
+	color: @font-main-color;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 500;
+	@media (max-width: 767px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+a {
+	color: @font-main-color;
+}
+
+p {
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 22px;
+	@media (max-width: 767px) {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+p.font18 {
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 26px;
+	@media (max-width: 767px) {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 22px;
+	}
+}
+
+.color {
+	color: @custom-color;
+}
+
+h1,
+h2 {
+	font-size: 52px;
+	line-height: 1em;
+	padding: 0 0 20px;
+	margin: 0 0 60px;
+	font-family: @custom-font-1;
+	font-weight: 600;
+	color: @h-color;
+	@media (max-width: 767px) {
+		font-size: 40px;
+		line-height: 1em;
+		padding: 0 0 10px;
+		margin: 0 0 30px;
+	}
+}
+
+h1.decor,
+h2.decor {
+	padding: 0 0 48px;
+	margin-bottom: 33px;
+	background: url(../images/h-decor.png) no-repeat center bottom;
+	@media (max-width: 767px) {
+		padding: 0 0 25px;
+		margin-bottom: 25px;
+	}
+}
+
+h1.decor.decor-white,
+h2.decor.decor-white {
+	background-image: url(../images/h-decor-white.png);
+}
+
+h3 {
+	font-size: 42px;
+	line-height: 1em;
+	padding: 0;
+	margin: 0 0 40px;
+	font-family: @custom-font-1;
+	font-weight: 600;
+	color: @h-color;
+	@media (max-width: 767px) {
+		font-size: 36px;
+		line-height: 1em;
+		padding: 0 0 10px;
+		margin: 0 0 30px;
+	}
+}
+
+h3.decor {
+	padding: 0 0 45px;
+	margin-bottom: 28px;
+	@media (max-width: 767px) {
+		padding: 0 0 25px;
+		margin-bottom: 25px;
+	}
+	background: url(../images/h-decor.png) no-repeat center bottom;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 1.154em;
+	padding: 0;
+	margin: 0 0 20px;
+	font-family: @custom-font-2;
+	font-weight: 700;
+	color: @h-color;
+	@media (max-width: 767px) {
+		font-size: 24px;
+		margin: 0 0 15px;
+	}
+}
+
+h5 {
+	font-size: 22px;
+	line-height: 1em;
+	padding: 0;
+	margin: 0 0 25px;
+	font-family: @custom-font-2;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #272727;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+	font-family: @custom-font-2;
+	font-weight: bold;
+	color: #272727;
+}
+
+.divider {
+	clear: both;
+	height: 35px;
+	@media (max-width: 767px) {
+		height: 20px;
+	}
+}
+.divider-line {
+	clear: both;
+	height: 50px;
+	margin-top: 50px;
+	border-top: 1px solid #e0eaf2;
+	@media (max-width: 767px) {
+		margin-top: 30px;
+		height: 30px;
+	}
+}
+
+.divider-lg {
+	clear: both;
+	height: 65px;
+	@media (max-width: 767px) {
+		height: 40px;
+	}
+}
+
+.divider-sm {
+	clear: both;
+	height: 15px;
+	@media (max-width: 767px) {
+		height: 10px;
+	}
+}
+
+.divider-xs {
+	clear: both;
+	height: 10px;
+}
+
+.divider-xxs {
+	clear: both;
+	height: 5px;
+}
+
+.address-block {
+	position: relative;
+	padding: 0 0 20px 52px;
+	font-size: 16px;
+	line-height: 26px;
+	.icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 40px;
+		line-height: 40px;
+		color: @custom-color;
+	}
+	h6 {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+}
+
+#map {
+	width: 100%;
+	height: 325px;
+	margin: 0;
+	border: 0;
+	overflow: hidden
+}
+
+.quote {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #7a8288;
+	font-size: 15px;
+	line-height: 1.2em;
+	font-style: italic;
+	padding-left: 100px;
+	position: relative;
+	&:before {
+		font-family: Georgia, serif;
+		font-size: 200px;
+		line-height: 1em;
+		font-style: normal;
+		content: "“";
+		position: absolute;
+		left: 0;
+		top: -20px;
+		color: #e8eaec;
+	}
+}
+.quote-simple {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #7a8288;
+	font-size: 15px;
+	line-height: 22px;
+	font-style: italic;
+	padding-left: 20px;
+	position: relative;
+}
+
+ul.marker-list {
+	margin: 35px 0 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: left;
+	list-style: none;
+	li {
+		padding: 0 0 12px 23px;
+		position: relative;
+		&:after {
+			content: '\e913';
+			font-family: 'pool';
+			color: @custom-color;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 16px;
+		}
+		span {
+			color: #b1b1b1;
+		}
+	}
+}
+
+.animated {
+	-webkit-animation-duration: .6s;
+	animation-duration: .6s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	opacity: 1;
+}
+
+.animation,
+.step-animation {
+	opacity: 0;
+	opacity: 1\9;
+}

@@ -1,0 +1,113 @@
+.slider-wrapper {
+	position: relative;
+}
+#slider {
+	margin-bottom: @block-bottom-space + 10;
+	height: 700px;
+}
+
+@media (max-width: 767px) {
+	#slider {
+		margin-bottom: @block-bottom-space/2;
+		height: 400px;
+	}
+}
+
+#sea {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.nivo-caption .text {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-ms-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+	-webkit-animation-iteration-count: none;
+	animation-iteration-count: none
+}
+
+.nivo-caption .text1 {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size: 80px;
+	margin-bottom: .6em;
+	line-height: 1em;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+@media (max-width: 1199px) {
+	.nivo-caption .text1 {
+		font-size: ~'calc(3.8vw + 10px)';
+	}	
+}
+.nivo-caption .text2 {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 1.7em;
+	line-height: 1em;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+@media (max-width: 1199px) {
+	.nivo-caption .text2 {
+		font-size: ~'calc(.65vw + 15px)';
+	}	
+}
+@media (max-width:767px) {
+	.nivo-caption .text2 {
+		margin-bottom: 1em
+	}
+}
+
+.nivo-caption .text3 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+.nivo-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: 0 0;
+	text-align: center;
+	opacity: 1
+}
+
+.nivo-caption a.btn {
+	display: inline-block !important;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1em;
+	padding: 1.15em 1.6em;
+	border-radius: .5em;
+	height: auto;
+	text-transform: uppercase;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease
+}
+@media (max-width: 1199px) {
+	.nivo-caption a.btn {
+		font-size: ~'calc(.8vw + 5px)';
+	}
+}

@@ -1,0 +1,40 @@
+.service-item {
+	margin-bottom: 22px;
+	text-align: center;
+	.icon-circle {
+		width: 196px;
+		height: 196px;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		margin: 0 auto 45px;
+		.gradient (#27b9e8, #0b6fac);
+		color: #fff;
+		.icon {
+			font-size: 94px;
+			line-height: 196px;
+		}
+		.icon-hover {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background: #005395;
+			.transition (opacity 0.3s ease);
+		}
+	}
+	.service-title {
+		margin-bottom: 25px;
+	}
+	.service-text {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&:hover .icon-hover {
+		opacity: 1;
+	}
+}

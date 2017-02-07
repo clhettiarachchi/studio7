@@ -1,0 +1,10 @@
+.post {
+  padding-top: 5px;
+}
+.post h5 {
+  margin-bottom: 30px;
+}
+.post-image {
+  margin-bottom: 25px;
+  border-radius: 25px;
+}

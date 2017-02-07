@@ -1,0 +1,30 @@
+.request-form {
+  margin-bottom: 20px;
+  background: url(../images/bg-form.jpg) no-repeat center top #2392d7;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 30px 22px 25px 30px;
+  color: #fff;
+}
+.request-form h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.request-form form {
+  margin-top: 18px;
+}
+.request-form .btn {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .request-form {
+    margin: 0 -20px;
+    padding: 22px 25px;
+    border-radius: 0;
+  }
+  .request-form h4 {
+    font-size: 22px;
+  }
+}

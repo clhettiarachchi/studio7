@@ -1,0 +1,66 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
+.block {
+	margin-bottom: @block-bottom-space;
+}
+.block.bottom-md-margin {
+	margin-bottom: @block-bottom-space - 10;
+}
+.block.bottom-sm-margin {
+	margin-bottom: @block-bottom-space - 20;
+}
+.block.bottom-xs-margin {
+	margin-bottom: @block-bottom-space - 30;
+}
+.block.bottom-null {
+	margin-bottom: 0;
+}
+.block.bg-1 {
+	background: url(../images/block-bg.jpg) no-repeat fixed center center;
+	background-size: cover;
+	padding: 75px 0 44px;
+	color: #fff;
+	h2 {
+		color: #fff;
+	}
+}
+
+.block.bg-2 {
+	background: url(../images/block-bg-2.jpg) no-repeat fixed center center;
+	background-size: cover;
+	padding: 0;
+	color: #fff;
+	min-height: 578px;
+}
+
+.block.bg-3 {
+	background: url(../images/block-bg-3.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 73px 0 44px;
+	color: #fff;
+	h2 {
+		color: #fff;
+	}
+}
+
+body:not(.home) #page-content {
+	margin-top: @block-bottom-space;
+}
+
+@media (max-width: 767px) {
+	.block {
+		margin-bottom: @block-bottom-space/2;
+	}
+	body:not(.home) #page-content {
+		margin-top: @block-bottom-space/2;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: 1200px;
+	}
+}

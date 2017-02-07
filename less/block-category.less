@@ -1,0 +1,115 @@
+.category-item {
+	margin-bottom: 40px;
+  &.mb-sm {
+	  margin-bottom: 24px;
+  }
+	.category-image {
+		position: relative;
+		margin-bottom: 30px;
+		overflow: hidden;
+		z-index: 1;
+		border-radius: 20px;
+		-webkit-transform: translate3d(0,0,0);
+    	transform: translate3d(0,0,0);
+		img {
+			border-radius: 25px;
+		}
+	}
+	h5.category-title {
+		position: absolute;
+		z-index: 3;
+		bottom: 18px;
+		left: 22px;
+		margin: 0;
+		padding: 0;
+		font-size: 22px;
+		line-height: 28px;
+		font-family: @custom-font-2;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+	}	
+	.category-price {
+		position: absolute;
+		z-index: 5;
+		top: 25px;
+		right: 0;
+		padding: 0 15px 0 20px;
+		font-size: 18px;
+		line-height: 46px;
+		font-family: @custom-font-1;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #fff;
+		border-radius: 23px 0 0 23px;
+		background-color: @custom-color;
+		text-transform: none;
+		span {
+			font-size: 26px;
+			font-weight: 600;
+		}
+	}
+	.category-text {
+		position: relative;
+		padding: 0 50px 0 0;
+	}
+	.wave-wrapper {
+		opacity: 0;
+		left: -50%;
+		right: 50%;
+		width: 100%;
+		.transition (all 0.6s ease);
+	}
+	&:hover .wave-wrapper {
+		opacity: 1;
+		left: 25%;
+		right: 50%;
+		width: 100%;
+		.transition (all 0.6s ease);
+	}
+	.category-more-link {
+		position: absolute;
+		right: 0;
+		top: 8px;
+		.transition (all 0.3s ease);
+		a {
+			font-size: 30px;
+			color: @custom-color;
+			text-decoration: none;
+		}
+		&:hover {
+			right: -5px;
+			opacity: 0.8;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.category-item {
+		margin-bottom: 20px;
+		.category-title {
+			bottom: 15px;
+			left: 15px;
+			font-size: 22px;
+			line-height: 20px;
+		}
+	}
+}
+.wave-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	content: '';
+	background-color: rgba(40, 168, 225, 0.95);
+	-webkit-transform: skew(59deg) translateX(-75%);
+	transform: skew(59deg) translateX(-75%);
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+@media (min-width: 768px) {
+	.category-carousel [class*="col-"] {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+		margin-right: -4px;
+	}
+}

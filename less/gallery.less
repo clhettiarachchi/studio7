@@ -1,0 +1,120 @@
+.gallery {
+	overflow: hidden;
+	margin-top: -8px;
+	margin-bottom: 90px; 
+  &.gallery-isotope {
+  	margin-bottom: 40px; 
+ }
+	&__item {
+		position: relative;
+		float: left;
+		width: 12.5%;
+		@media (max-width: 1599px) {
+			width: 16.665%;
+		}
+		@media (max-width: 1399px) {
+			width: 20%;
+		}		
+		@media (max-width: 991px) {
+			width: 25%;
+		}
+		@media (max-width: 767px) {
+			width: 50%;
+		}		
+		@media (max-width: 480px) {
+			width: 100%;
+		}
+		overflow: hidden;
+		background: #242e45;
+		img {
+			width: 100%;
+			opacity: 1;
+			.transition (all 0.5s ease);
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		&.doubleW {
+			width: 33.333%;
+		}
+		&.doubleH {}
+		.btn {
+			position: absolute;
+			.vertical-align;
+			left: 50%;
+			margin-left: -50px;
+			opacity: 0;
+			font-size: 18px;
+			.transition (all 0.3s ease);
+			span.icon {
+				display: block;
+				line-height: 58px;
+			}
+			&:hover,
+			&.active,
+			&:active,
+			&.focus,
+			&:focus {
+				background: darken(@button-bg, 10%);
+				border-color: darken(@button-bg, 10%);
+				color: @button-color;
+			}
+		}
+		.hover {
+			opacity: 0;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			padding: 20px;
+			background: rgba(0,0,0,.5);
+			text-decoration: none;
+			color: #fff;
+			.transition (all 0.5s ease 0s);
+			.item-name {
+				margin: 0 0 9px;
+				padding: 0;
+				line-height: 22px;
+				font-weight: 500;
+				color: #fff;
+			}
+			.item-price {
+				margin-bottom: 6px;
+				font-size: 28px;
+				line-height: 30px;
+				font-weight: 600;
+				span {
+					font-weight: 300;
+				}
+			}
+			.item-period {
+				font-size: 15px;
+			}
+			.item-location {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				font-size: 15px;
+				line-height: 1em;
+				font-style: italic;
+				font-weight: 600;
+				color: #28bceb;
+			}
+		}
+		&__image {
+			overflow: hidden;
+		}
+	}
+}
+
+.gallery__item:hover {
+	img {
+		opacity: 0.68;
+	}
+	.hover {
+		opacity: 1;
+		.transition (all 0.5s ease 0.05s);
+	}
+	.btn {
+		opacity: 1;
+	}
+}
