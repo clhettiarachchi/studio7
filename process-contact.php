@@ -6,7 +6,7 @@
 	$phone = $_REQUEST['phone'];
 	$message = $_REQUEST['message'];
     $headers = "From: $from";
-	$subject = "Contact Form PoolService";
+	$subject = "Studio7 Contact";
    
     $fields = array();
     $fields{"name"} = "First name";
